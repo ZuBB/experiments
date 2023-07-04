@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.flag {
+  position: absolute;
+}
+
+.ua {
+  width: 300px;
+  height: 200px;
+  z-index: 10;
+}
+
+.nato {
+  width: 160px;
+  z-index: 20;
+  top: 20px;
+  left: 70px;
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(157deg) brightness(105%) contrast(101%);
+  /* filter: invert(0%) sepia(3%) saturate(17%) hue-rotate(322deg) brightness(104%) contrast(98%); */
+}
+
+.eu {
+  width: 300px;
+  height: 200px;
+  z-index: 30;
+  rotate: calc(360deg/12/2);
+}
+
+.c01 { transform: rotate(45deg)  translate(65px) rotate( -45deg); }
+.c02 { transform: rotate(75deg)  translate(65px) rotate( -75deg); }
+.c03 { transform: rotate(105deg) translate(65px) rotate(-105deg); }
+.c04 { transform: rotate(135deg) translate(65px) rotate(-135deg); }
+.c05 { transform: rotate(165deg) translate(65px) rotate(-165deg); }
+.c06 { transform: rotate(195deg) translate(65px) rotate(-195deg); }
+.c07 { transform: rotate(225deg) translate(65px) rotate(-225deg); }
+.c08 { transform: rotate(255deg) translate(65px) rotate(-255deg); }
+.c09 { transform: rotate(285deg) translate(65px) rotate(-285deg); }
+.c10 { transform: rotate(315deg) translate(65px) rotate(-315deg); }
+.c11 { transform: rotate(345deg) translate(65px) rotate(-345deg); }
+.c12 { transform: rotate(375deg) translate(65px) rotate(-375deg); }
+
+.c06, .c07, .c08, .c09, .c10, .c11 {
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(85%) sepia(27%) saturate(4297%) hue-rotate(355deg) brightness(107%) contrast(111%);
+  /* filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(157deg) brightness(105%) contrast(101%); */
+}
+
+.c01, .c02, .c03, .c04, .c05, .c12 {
+  filter: invert(18%) sepia(42%) saturate(5960%) hue-rotate(201deg) brightness(98%) contrast(101%);
+  /* filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(157deg) brightness(105%) contrast(101%); */
+}
+
+.eu2 {
+  position: absolute;
+  z-index: 30;
+  top: 25px;
+  left: 75px;
+}
+
+.ciclegraph {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  margin: calc(25px / 2 + 0px);
+}
+
+.ciclegraph:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 2px solid teal; */
+  width: calc(100% - 2px * 2);
+  height: calc(100% - 2px * 2);
+  border-radius: 50%;
+}
+
+.ciclegraph .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: calc(-20px / 2);
+  /* background: teal; */
+  border-radius: 50%;
+}
